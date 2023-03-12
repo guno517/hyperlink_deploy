@@ -8,7 +8,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 const { VITE_GOOGLE_CLIENT_ID } = import.meta.env;
 
 import App from './App';
-import 'public/styles/global.css';
+import '/src/styles/global.css';
 import { worker } from '@/__mocks__/worker';
 
 if (process.env.NODE_ENV === 'development') {
