@@ -1,7 +1,7 @@
 import { useRecoilState } from 'recoil';
 import ButtonGroup from '@/components/buttonGroup';
 import Bookmark from '@/components/history/Bookmark';
-import History from '@/components/history/History';
+import History from '@/components/history';
 import { selectedFilterHistoryPageState } from '@/stores/selectedCategory';
 import * as style from './style.css';
 
