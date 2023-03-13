@@ -5,7 +5,7 @@ const API_BASE_URL =
   import.meta.env.MODE === 'development' ? VITE_BASE_URL : '';
 
 const axiosApi = (options = {}) => {
-  const instance = axios.create({ baseURL: API_BASE_URL, ...options });
+  const instance = axios.create({ baseURL: VITE_BASE_URL, ...options });
 
   instance.defaults.timeout = 2500;
 
