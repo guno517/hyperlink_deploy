@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import { myInfo } from './member';
+import { myInfo } from './memberHandler';
 
 export const authHandlers = [
   rest.get('/members/oauth/code/google', (req, res, ctx) => {
