@@ -77,7 +77,7 @@ const Home = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        {isAuthorized ? <RecommenedCreators /> : null}
+        {/* {isAuthorized ? <RecommenedCreators /> : null} */}
         <MainContents />
       </div>
     </div>

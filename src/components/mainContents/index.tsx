@@ -50,12 +50,16 @@ const MainContents = () => {
     return <div>검색 결과 api 에러!!!</div>;
   }
 
+  if (!getContents) {
+    return <div>getContents 에러!!!!!!!!!!!!!!!!</div>;
+  }
+
   return (
     <CardList type="content">
       {
         // 불러오는데 성공하고 데이터가 0개가 아닐 때 렌더링
         getContentsIsSuccess && getContents?.pages
-          ? getContents.pages.map((page_data, page_num) => {
+          ? getContents?.pages.map((page_data, page_num) => {
               const board_page = page_data.content_page;
               return board_page.map((item, idx) => {
                 if (

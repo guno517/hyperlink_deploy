@@ -1,10 +1,10 @@
-import { views } from '@/types/admin';
 import { WEEKLY_VIEWS } from '@/utils/constants/storage';
 import { isSameDate } from '@/utils/date';
 import { getItem, setItem } from '@/utils/storage';
+import { weeklyViews } from '@/types/admin';
 
-export const updateWeeklyViews = (yesterdayViews: views) => {
-  const weeklyViews: views[] = getItem(WEEKLY_VIEWS, []);
+export const updateWeeklyViews = (yesterdayViews: weeklyViews) => {
+  const weeklyViews: weeklyViews[] = getItem(WEEKLY_VIEWS, []);
   const today = new Date();
   const yesterday = new Date(today.setDate(today.getDate() - 1));
 
